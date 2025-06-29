@@ -7,7 +7,8 @@
     "build": "esbuild server/index-production.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index-production.js",
     "check": "tsc",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.6",
